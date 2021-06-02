@@ -205,14 +205,14 @@ class DocController extends Controller
      */
     public function debug()
     {
-        $data = $this->request->all();
-        $api_url = $this->request->input('url');
+        $data = $this->request->param();
+        $api_url = $this->request->root(true).':'.$this->request->port().$this->request->param('url');
         $res['status'] = '404';
         $res['meaasge'] = '接口地址无法访问！';
         $res['result'] = '';
-        $method =  $this->request->input('method_type', 'GET');
-        $cookie = $this->request->input('cookie');
-        $headers = $this->request->input('header', array());
+        $method =  $this->request->param('method_type', 'GET');
+        $cookie = $this->request->param('cookie');
+        $headers = $this->request->param('header', array());
         unset($data['method_type']);
         unset($data['url']);
         unset($data['cookie']);

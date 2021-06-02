@@ -1,6 +1,8 @@
 <?php
 use think\facade\Route;
 
+Route::get('doc', 'Weiwei\ApiDoc\DocController@index');
+Route::get('pass', "Weiwei\ApiDoc\DocController@pass");
 Route::get('doc/index', 'Weiwei\ApiDoc\DocController@index');
 Route::get('doc/search', 'Weiwei\ApiDoc\DocController@search');
 Route::get('doc/list', "Weiwei\ApiDoc\DocController@getList");
