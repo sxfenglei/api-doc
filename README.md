@@ -94,12 +94,6 @@ class Demo extends Controller
 - ![](https://static.oschina.net/uploads/img/201704/17101348_XuUz.png)
 - ![](https://static.oschina.net/uploads/img/201704/17101306_KePe.png)
 
-###更多支持
-- QQ群663447446
-
-###赞助二维码
-- ![](https://static.oschina.net/uploads/space/2018/0601/163814_StfS_270003.jpg)
-- ![](https://static.oschina.net/uploads/space/2018/0601/163835_MOVe_270003.jpg)
 
 ###2017年8月16日更新
 - 增加头部参数设置，根据自己需求去设置参数
@@ -116,3 +110,6 @@ class Demo extends Controller
 - 增加静态资源自定义路径方式（可以把扩展下面的assets目录复制到你的pulic目录，然后配置static_path='/assets'）,特么是nginx线上服务器可以这么做
 - 增加文档搜索功能
 
+###2021年6月2日更新
+- 修复TP6下在线请求500错误问题
+- 在TP6下的路由设置doc
